@@ -297,17 +297,11 @@ class MojiEditor {
     setupShortcutHints() {
         // グローバルなキーイベントをリッスン
         document.addEventListener('keydown', (e) => {
-            // Cmd/Ctrl+ESCキーでクリア
-            if ((e.metaKey || e.ctrlKey) && e.key === 'Escape') {
-                e.preventDefault();
-                this.clearEditor();
-            }
-
-            // ESCキーでクリア
+            // ESCキーでポップアップを閉じる
             if (e.key === 'Escape') {
                 e.preventDefault();
-                this.clearEditor();
-            } 
+                this.closePopup();
+            }
             
             // Cmd/Ctrlキーが押されたらショートカットを表示
             if (e[this.modifierKey] && !this.showingShortcuts) {
@@ -342,7 +336,7 @@ class MojiEditor {
         this.themeToggle.querySelector('.text-icon').textContent = `${this.modifierSymbol}${shiftSymbol}D`;
         this.copyButton.querySelector('.text-icon').textContent = `${this.modifierSymbol}${shiftSymbol}Y`;
         this.clearButton.querySelector('.text-icon').textContent = `${this.modifierSymbol}${shiftSymbol}O`;
-        this.closeButton.querySelector('.text-icon').textContent = `${this.modifierSymbol}ESC`;
+        this.closeButton.querySelector('.text-icon').textContent = 'ESC';
     }
     
     // ボタンを通常表示に戻す

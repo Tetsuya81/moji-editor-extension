@@ -71,13 +71,13 @@
 ### キーボードショートカット
 
 #### 拡張機能を開く
-- **Alt+Shift+M**: Moji Editorを開く（全プラットフォーム共通）
+- **Cmd+Shift+M / Ctrl+Shift+M**: Moji Editorを開く（Mac / Windows・Linux）
 
 #### エディタ内の操作
-- **Cmd+Shift+U / Ctrl+Shift+U**: コピー
+- **Cmd+Shift+Y / Ctrl+Shift+Y**: コピー
 - **Cmd+Shift+O / Ctrl+Shift+O**: エディタをクリア（確認なしで即座に実行）
-- **Cmd+Shift+Y / Ctrl+Shift+Y**: テーマ切り替え
-- **ESC**: 拡張機能を閉じる
+- **Cmd+Shift+D / Ctrl+Shift+D**: テーマ切り替え
+- **ESC**: ポップアップを閉じる
 - **Tab**: インデント（2スペース）
 
 #### ショートカットのカスタマイズ
@@ -160,6 +160,6 @@ console.log('コードブロック');
 
 ---
 
-**Moji Editor Extension v1.0.2**  
+**Moji Editor Extension v1.0.4**  
 © 2025 - macOSライクなミニマルテキストエディタ
 
